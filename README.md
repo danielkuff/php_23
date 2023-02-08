@@ -32,9 +32,13 @@
 
 ### Para fazer merge
     1 - git checkout (ir para o local desejado)
-    2 - git add (adicionar os dados)
-    3 - git commit - m "Comentarios"
-    4 - teste
+    2 - git pull (obter atualizacoes)
+    3 - git merge (combinar, trazer as mudanças do branche desejado)
+
+        Ex: Estamos na branch develop e queremos levar as mudanças p/ main
+        1 - git checkout main
+        2 - git pull (obter atualizações)
+        3 - git merge (combinar a branch)
     
 
 
