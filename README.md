@@ -31,15 +31,10 @@
     4 - Verificar no github se ficou salvo.
 
 ### Para fazer merge
-    1 - git checkout (ir para o local desejado)
-    2 - git pull (obter atualizacoes)
-    3 - git merge (combinar, trazer as mudanças do branche desejado)
-
-        Ex: Estamos na branch develop e queremos levar as mudanças p/ main
-        1 - git checkout main
-        2 - git pull (obter atualizações)
-        3 - git merge (combinar a branch)
-    
-
-
- 
+     - git checkout (ir para o local desejado)
+     - git pull
+     - git merge
+     - resolver conflitos (se houver com git add .(git commit -m))
+     - git push
+     - Verificar no git se ficou salvo
+     - 
