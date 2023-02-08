@@ -29,6 +29,9 @@
     3 - git push
 
     4 - Verificar no github se ficou salvo.
+
+### Para fazer merge
+    1 - git checkout
     
 
 
