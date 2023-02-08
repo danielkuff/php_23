@@ -34,7 +34,8 @@
     1 - git checkout (ir para o local desejado)
     2 - git add (adicionar os dados)
     3 - git commit - m "Comentarios"
-    4 - teste
+    4 -git push
+    5 - teste
     
 
 
