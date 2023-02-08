@@ -31,11 +31,13 @@
     4 - Verificar no github se ficou salvo.
 
 ### Para fazer merge
-    1 - git checkout (ir para o local desejado)
-    2 - git add (adicionar os dados)
-    3 - git commit - m "Comentarios"
-    4 -git push
-    5 - Verificar no git se ficou salvo
+     - git checkout (ir para o local desejado)
+     - git pull
+     - git merge
+     - resolver conflitos (se houver com git add .(git commit -m))
+     - git push
+     - Verificar no git se ficou salvo
+     - 
     
 
 
