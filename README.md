@@ -35,7 +35,7 @@
     2 - git add (adicionar os dados)
     3 - git commit - m "Comentarios"
     4 -git push
-    5 - teste
+    5 - Verificar no git se ficou salvo
     
 
 
