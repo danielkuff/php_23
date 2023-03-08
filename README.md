@@ -37,4 +37,21 @@
      - resolver conflitos (se houver com git add .(git commit -m))
      - git push
      - Verificar no git se ficou salvo
-     - 
+
+### Criar tabelas
+## Tabela de usuário
+
+     - 1.id/codigo (PK) Primary key
+     - 2.user_id - NOK
+     - 3.user_status - NOK
+     - 4.user_fullname
+     - 5.user_name
+     - 6.user_pass
+     - 7.user_mail
+     - 8.user_rank
+     
+     - 9.user_department (FK) Foreign key = PK de outra tabela
+     - 10.alt_who (mod_who)
+     - 11.alt_when - NOK (mod_when)
+     - 12.log_first - NOK
+     - 13.log_last - NOK
