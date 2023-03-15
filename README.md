@@ -41,17 +41,49 @@
 ### Criar tabelas
 ## Tabela de usuário
 
-     - 1.id/codigo (PK) Primary key
-     - 2.user_id - NOK
-     - 3.user_status - NOK
-     - 4.user_fullname
-     - 5.user_name
-     - 6.user_pass
-     - 7.user_mail
-     - 8.user_rank
-     
-     - 9.user_department (FK) Foreign key = PK de outra tabela
-     - 10.alt_who (mod_who)
-     - 11.alt_when - NOK (mod_when)
-     - 12.log_first - NOK
-     - 13.log_last - NOK
+### TABELA rh
+id PK AUTOINCREMENT NOT NULL
+    id_pessoa (fk) = null
+    salario
+log_first datetime DEFAULT CURRENTTIMESTAMP,
+log_last datetime DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENTTIMESTAMP,
+
+
+### TABELA pesssoas|people 
+id PK AUTOINCREMENT NOT NULL (fk = id_pessoas nas outras tabelas)
+user_id (fk) = null
+endereco (fk) = null
+cpf = null
+cnpj = null
+telefone = null
+nacionalidade * (NOT NULL)
+estado_civil = null
+cnae = null
+data_abertura_empresa = null
+genero = null
+etnia = null
+inscricao_estadual = null
+
+
+### TABELA enderecos
+id_estado (fk) = null
+id_cidade (fk) = null
+rua
+bairro
+numero
+complemento
+cep
+referencia
+
+
+### TABELA estados
+nome
+sigla
+
+
+### TABELA cidade 
+nome
+populacao
+densidade_demografica
+renda_per_capita
+ultimo_senso
