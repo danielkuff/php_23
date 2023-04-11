@@ -1,0 +1,76 @@
+// Jogo pedra, papel e tesoura.
+
+// criar a logica do jogo: pedra, papel , tesoura.
+// pedra
+// papel
+// tesoura
+
+// as condicoes, quem ganha de quem
+// mostrar quem ganhou
+// ATORES
+    // pedra
+    // papel
+    // tesoura
+
+// Condicoes do jogo, quem ganha de quem
+// mostrar quem ganhou
+
+// array | vetor [] associativo. 
+
+/*
+    $condicoes    = [1, 2, 3]; // length|size 3.
+    $condicoes    = ["papel", "tesoura", 'pedra']; // length|size 3.
+    $indice ou $i =   0,        1,         2
+    $condicoes = [
+        "papel" => [
+            "tesoura" => "perde",
+            "pedra" => "ganha",
+            "papel" => "empate",
+        ],
+        "pedra" => [
+            "tesoura" => "ganha",
+            "pedra" => "empate",
+            "papel" => "perde",
+        ],
+        "tesoura" => [
+            "tesoura" => "empate",
+            "pedra" => "perde",
+            "papel" => "ganha",
+        ],
+    ];
+    $condicoes["papel"]["tesoura"]; // perde
+    
+    $daniel = "pedra";    // 1
+    $eduardo = "tesoura"; // 2
+    $condicoes[$daniel][$eduardo]; // ganha;
+
+<?php
+
+    define("PEDRA", 1);
+    define("PAPEL", 2);
+    define("TESOURA", 3);
+
+    function jogador1() 
+{
+    $jpgadas = array(PEDRA, PAPEL, TESOURA);
+    $randomIndex = array_rand($jogadas);
+    return $jogadas[$randomIndex];
+}
+
+    function jogar($jogador, $computador)
+{
+    if ($jogador == $copmutador) 
+{
+    return "empate!";
+}
+    elseif  (($jogador == PEDRA && $computador == TESOURA) ||
+             ($jogador == PAPEL && $computador == PEDRA) ||
+             ($jogador == TESOURA && $computador == PAPEL)) 
+{
+    return "Você ganhou!";
+}
+    else 
+{
+    return "Você perdeu!";
+}
+}
