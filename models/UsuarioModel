@@ -1,0 +1,15 @@
+<?php
+
+class UsuarioModel extends BaseModel {
+
+    // Crud
+    public function createUsuario($dados)
+    {
+        $campos = ['nome', 'username'];
+        $dados = ['isabel', 'isabel_infoserv'];
+
+        $idUsuario = $this->Create("usuarios", $campos, $dados);
+
+        return $idUsuario;
+    }
+}
